@@ -41,12 +41,10 @@ In all the experiments, we used the MNIST-LT as toy-dataset to validate our impl
 <br>
 <br>
 
-The MNIST-LT is a long-tail version of the MNIST dataset that I used in these experiments. It is not the ideal scenario to evaluate long-tail classification as the MNIST does not have a large intraclass variance and small interclass similarity. The distribution of samples per label in the MNIST-LT obtained using the pareto distribution is presented in the Figure 2. To obtain the head, medium and tail groups, we used the threshold of 100 and 1000. It means that classes with fewer samples than 100 are clustered in the tail group, between 100 and 1000 are clustered in the medium and above 1000 are in the head cluster.
-
-<br>
+The MNIST-LT is a long-tail version of the MNIST dataset that I used in these experiments. It is not the ideal scenario to evaluate long-tail classification as the MNIST does not have a large intraclass variance and small interclass similarity. The distribution of samples per label in the MNIST-LT obtained using the pareto distribution is presented in the Figure 1. 
 
 ![](./MNIST-LT.png)
-<center> Figure 2. Distribution of the number of samples per class in the MNIST-LT.</center>
+<center> Figure 1. Distribution of the number of samples per class in the MNIST-LT.</center>
 
 <br>
 <br>
@@ -95,10 +93,10 @@ Tabel 1. Different Sampling Strategies.
 <br>
 <br>
 
-Evaluating the different baselines. The obtained experimental results are shown in Table 2, where we notice that the classifier retraining (cRT) is the one with the best results. Differently, the NMC is the only method that degradates the inital results of the model. We credit that to the very simple feature extractor model. Figure 1 shows the obtained umap plot that corroborates with our assumption. 
+Evaluating the different baselines. The obtained experimental results are shown in Table 2, where we notice that the classifier retraining (cRT) is the one with the best results. Differently, the NMC is the only method that degradates the inital results of the model. We credit that to the very simple feature extractor model. Figure 2 shows the obtained umap plot that corroborates with our assumption. 
 
 ![](./umap_plot.png)
-<center>Figure 1. The umap plot obtained using the feature representation from the training samples of the MNIST-LT.</center>
+<center>Figure 2. The umap plot obtained using the feature representation from the training samples of the MNIST-LT.</center>
 
 <br>
 <br>
